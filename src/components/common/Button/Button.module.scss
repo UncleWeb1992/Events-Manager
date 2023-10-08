@@ -1,0 +1,14 @@
+.Button {
+  min-width: 104px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 8px 24px;
+  border: 0;
+  background-color: #fff;
+
+  &:disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: #969696;
+  }
+}

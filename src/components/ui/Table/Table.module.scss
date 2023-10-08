@@ -1,0 +1,90 @@
+.Table {
+  width: 90%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  margin: 0 auto;
+
+  & thead {
+    & th:first-child {
+      width: 10%;
+    }
+
+    & th {
+      padding: 13px 0;
+
+      &:not(:last-child) {
+        border-right: 1px solid #000;
+      }
+    }
+  }
+
+  & tbody {
+    & tr {
+      position: relative;
+    }
+    & td {
+      text-align: center;
+      padding: 13px 10px;
+
+      border-top: 1px solid #000;
+
+      &:nth-child(6) {
+        border-right: 0 !important;
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid #000;
+      }
+    }
+  }
+}
+
+.completed {
+  background-color: #59e42f6c;
+  font-weight: 600;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  transform: translateY(2px);
+  margin-left: 5px;
+
+  &.rotate {
+    transform: translateY(5px) rotate(180deg);
+  }
+}
+
+.actions {
+  position: absolute;
+  display: flex !important;
+  align-items: center;
+  border: 0 !important;
+  right: -50px;
+  top: 0;
+
+  padding: 13px 0 !important    ;
+}
+
+.modal {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

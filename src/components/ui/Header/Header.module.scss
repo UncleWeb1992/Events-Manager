@@ -1,0 +1,30 @@
+.Header {
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--header-background);
+  padding: 0 22px;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.name {
+  color: black;
+}
