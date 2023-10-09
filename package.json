@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^8.2.1"
+    "concurrently": "^8.2.1",
+    "json-server": "^0.17.4"
   }
 }
